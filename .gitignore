@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Local downloaded data and generated outputs
+.cache/
+outputs/
+.tools/
+*.log
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local publishing artifacts
+article_wechat.html
+editor_notes.md
