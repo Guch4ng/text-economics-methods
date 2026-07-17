@@ -33,6 +33,7 @@ source .venv/bin/activate
 | 课次 | 主题 | 位置 |
 | --- | --- | --- |
 | 第 1 课 | 文本如何成为经济变量：研究问题、观测单位、标签与效度 | [lessons/01_text_as_economic_variable](lessons/01_text_as_economic_variable) |
+| 第 2 课 | 语料获取、编码、清洗、分句、分词与停用词 | [lessons/02_corpus_cleaning](lessons/02_corpus_cleaning) |
 
 ## 第 1 课运行方式
 
@@ -52,9 +53,27 @@ outputs/lesson_01/
 
 这些目录不会上传到 GitHub。读者应自己运行代码生成结果。
 
+## 第 2 课运行方式
+
+```bash
+python lessons/02_corpus_cleaning/code/01_download_html.py
+python lessons/02_corpus_cleaning/code/02_clean_corpus.py
+python lessons/02_corpus_cleaning/code/03_compare_terms.py
+python lessons/02_corpus_cleaning/code/04_check_outputs.py
+```
+
+运行后，本机会生成：
+
+```text
+.cache/lesson_02/
+outputs/lesson_02/
+```
+
+第 2 课重点检查：编码选择、正文抽取边界、分句样本、清洗前后高频词差异。
+
 ## 数据说明
 
-第 1 课使用 Federal Reserve 官网公开的 FOMC 声明。仓库只保存来源链接和教学标签，不保存下载后的网页正文。详见 [data_sources.md](lessons/01_text_as_economic_variable/data_sources.md)。
+第 1 课和第 2 课使用 Federal Reserve 官网公开的 FOMC 声明。仓库只保存来源链接和教学标签，不保存下载后的网页正文。详见各课目录下的 `data_sources.md`。
 
 ## 学术使用提醒
 
