@@ -1,0 +1,27 @@
+category,term,polarity,notes
+inflation,inflation,attention,price stability term
+inflation,price,attention,price stability term
+inflation,prices,attention,price stability term
+inflation,pressures,attention,inflation pressure term
+inflation,elevated,attention,inflation pressure term
+labor,employment,attention,dual mandate term
+labor,unemployment,attention,labor market term
+labor,labor,attention,labor market term
+labor,job,attention,labor market term
+labor,jobs,attention,labor market term
+labor,hiring,attention,labor market term
+tightening,raise,hawkish,policy direction term
+tightening,increases,hawkish,policy direction term
+tightening,tightening,hawkish,policy direction term
+tightening,restrictive,hawkish,policy direction term
+tightening,firming,hawkish,policy direction term
+easing,lower,dovish,policy direction term
+easing,reduce,dovish,policy direction term
+easing,reducing,dovish,policy direction term
+easing,cut,dovish,policy direction term
+easing,supporting,dovish,policy direction term
+uncertainty,uncertain,risk,risk and uncertainty term
+uncertainty,risks,risk,risk and uncertainty term
+uncertainty,risk,risk,risk and uncertainty term
+uncertainty,balance,risk,risk and uncertainty term
+uncertainty,confidence,risk,risk and uncertainty term

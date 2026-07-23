@@ -15,7 +15,7 @@
 建议使用 Python 3.10 或更新版本。
 
 ```bash
-git clone https://github.com/YOUR-USER/text-economics-methods.git
+git clone https://github.com/Guch4ng/text-economics-methods.git
 cd text-economics-methods
 python -m venv .venv
 .venv\Scripts\activate
@@ -28,12 +28,32 @@ macOS 或 Linux 用户可把激活环境命令替换为：
 source .venv/bin/activate
 ```
 
+Windows PowerShell 用户可以直接运行最新一课：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\run_lessons.ps1
+```
+
+运行指定课次：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\run_lessons.ps1 -Lesson 3
+```
+
+运行全部课程：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\run_lessons.ps1 -All
+```
+
 ## 课程目录
 
 | 课次 | 主题 | 位置 |
 | --- | --- | --- |
 | 第 1 课 | 文本如何成为经济变量：研究问题、观测单位、标签与效度 | [lessons/01_text_as_economic_variable](lessons/01_text_as_economic_variable) |
 | 第 2 课 | 语料获取、编码、清洗、分句、分词与停用词 | [lessons/02_corpus_cleaning](lessons/02_corpus_cleaning) |
+| 第 3 课 | 词频、关键词和词典法 | [lessons/03_word_frequency_dictionary](lessons/03_word_frequency_dictionary) |
+| 第 4 课 | TF-IDF 与文本特征矩阵 | [lessons/04_tfidf_feature_matrix](lessons/04_tfidf_feature_matrix) |
 
 ## 第 1 课运行方式
 
@@ -71,9 +91,37 @@ outputs/lesson_02/
 
 第 2 课重点检查：编码选择、正文抽取边界、分句样本、清洗前后高频词差异。
 
+## 第 3 课运行方式
+
+```bash
+python lessons/03_word_frequency_dictionary/code/01_build_word_frequency_dictionary.py
+```
+
+运行后，本机会生成：
+
+```text
+outputs/lesson_03/
+```
+
+第 3 课重点检查：总词频、文档频率、关键词排序、文档-词矩阵和教学词典分数。
+
+## 第 4 课运行方式
+
+```bash
+python lessons/04_tfidf_feature_matrix/code/01_build_tfidf_feature_matrix.py
+```
+
+运行后，本机会生成：
+
+```text
+outputs/lesson_04/
+```
+
+第 4 课重点检查：计数矩阵、IDF 表、TF-IDF 特征矩阵、区分性词和余弦相似度。
+
 ## 数据说明
 
-第 1 课和第 2 课使用 Federal Reserve 官网公开的 FOMC 声明。仓库只保存来源链接和教学标签，不保存下载后的网页正文。详见各课目录下的 `data_sources.md`。
+第 1 至第 4 课使用 Federal Reserve 官网公开的 FOMC 声明。仓库只保存来源链接、教学标签和教学词典，不保存受限制数据。详见各课目录下的 `data_sources.md`。
 
 ## 学术使用提醒
 
